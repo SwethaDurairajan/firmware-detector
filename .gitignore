@@ -1,0 +1,17 @@
+# Firmware samples — legal issue, upload panna koodadhu
+firmware/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data — extract_features.py run panni regenerate pannalam
+data/samples.csv
+
+# Virtual environments
+venv/
+.venv/
+
+# OS files
+.DS_Store
+*.swp
