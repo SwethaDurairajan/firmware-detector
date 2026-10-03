@@ -13,7 +13,6 @@ def entropy(data):
 def extract(filepath):
     with open(filepath, "rb") as f:
         data = f.read()
-    
     return {
         "entropy": round(entropy(data), 3),
         "string_count": data.count(b"\x00"),
@@ -23,7 +22,6 @@ def extract(filepath):
 
 def build_dataset():
     rows = []
-    
     for label, folder in [(0, "firmware/benign"), (1, "firmware/malicious")]:
         if not os.path.exists(folder):
             print(f"Skipping: {folder}")
@@ -55,4 +53,3 @@ def build_dataset():
 
 if __name__ == "__main__":
     build_dataset()
-
